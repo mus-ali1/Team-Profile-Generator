@@ -49,3 +49,21 @@ const managerTemplate = (managerData) => {
 
     return template;
 }
+
+const createHTML = (employeeData) => {
+    let employeeHTML = ""
+
+    for (let i = 0; i < employeeData.length; i++) {
+        switch (employeeData[i].role) {
+            case "Manager":
+                employeeHTML += managerTemplate(employeeData[i])
+                break;
+            case "Engineer":
+                employeeHTML += engineerTemplate(employeeData[i])
+                break;
+
+            case "Intern":
+                employeeHTML += internTemplate(employeeData[i])
+                break;
+        }
+    }
