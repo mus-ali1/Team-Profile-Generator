@@ -154,4 +154,14 @@ class teamBuilder {
 
     }
 
+    createHTMLFile() {
+        writeFileAsync("./dist/index.html", generateHTML(this.teamMembers))
+            .then(() => console.log("File sucessfully created!"))
+            .catch((err) => console.error(err));
+    }
+
+}
+
+module.exports = teamBuilder;
+
 
