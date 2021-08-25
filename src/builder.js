@@ -121,3 +121,34 @@ class teamBuilder {
                 this.addEmployee();
             })
     }
+
+    engineerDetails() {
+        inquirer.prompt([
+            {
+                type: "input",
+                message: "Please enter the name of the engineer.",
+                name: "name"
+            },
+            {
+                type: "input",
+                message: "Please enter the engineer's employee ID.",
+                name: "id"
+            },
+            {
+                type: "input",
+                message: "Please enter this engineer's email address.",
+                name: "email"
+            },
+            {
+                type: "input",
+                message: "Please enter this engineer's Github username.",
+                name: "github"
+            }
+        ])
+            .then(details => {
+                const { name, id, email, github } = details
+                this.teamMembers.push(new Engineer(name, id, email, github));
+                this.addEmployee();
+            })
+
+    }
