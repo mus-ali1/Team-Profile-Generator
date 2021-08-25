@@ -45,3 +45,49 @@ class teamBuilder {
                 this.addEmployee();
             })
     }
+
+
+    addEmployee() {
+        inquirer.prompt([
+            {
+                type: "confirm",
+                message: "Do you wish to add another employee?",
+                name: "choice"
+            }
+        ]).then(val => {
+            if (val.choice) {
+                this.chooseEmployee()
+            } else {
+                this.createHTMLFile()
+            }
+        })
+
+    }
+
+    chooseEmployee() {
+        inquirer.prompt([
+            {
+                type: "list",
+                message: "What employee role do you wish to add?",
+                name: "employeeType",
+                choices: ["Intern", "Engineer"]
+
+            }
+        ])
+            .then(val => {
+                const { employeeType } = val
+                switch (employeeType) {
+                    case "Intern":
+                        this.internDetails()
+                        break;
+
+                    case "Engineer":
+                        this.engineerDetails()
+                        break;
+
+                    default:
+                        this.createHTMLFile();
+                }
+
+            })
+    }
