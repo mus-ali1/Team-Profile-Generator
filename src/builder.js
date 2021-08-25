@@ -6,6 +6,7 @@ const Engineer = require("../lib/engineer.js");
 const Manager = require("../lib/manager.js");
 const Intern = require("../lib/intern.js");
 const generateHTML = require("./generate.js");
+const writeFileAsync = util.promisify(fs.writeFile);
 
 class teamBuilder {
     constructor() {
@@ -152,3 +153,5 @@ class teamBuilder {
             })
 
     }
+
+
