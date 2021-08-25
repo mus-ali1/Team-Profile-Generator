@@ -91,3 +91,33 @@ class teamBuilder {
 
             })
     }
+
+    internDetails() {
+        inquirer.prompt([
+            {
+                type: "input",
+                message: "Please enter the name of this intern.",
+                name: "name"
+            },
+            {
+                type: "input",
+                message: "Please enter the intern's employee ID.",
+                name: "id"
+            },
+            {
+                type: "input",
+                message: "Please enter this intern's email address.",
+                name: "email"
+            },
+            {
+                type: "input",
+                message: "Please enter this intern's school.",
+                name: "school"
+            }
+        ])
+            .then(details => {
+                const { name, id, email, school } = details
+                this.teamMembers.push(new Intern(name, id, email, school));
+                this.addEmployee();
+            })
+    }
