@@ -21,7 +21,7 @@ describe('Manager', () => {
         expect(managerTest.role).toBe('Manager')
     })
 
-    it('has a office number', () => {
+    it('has an office number', () => {
         keys = Object.keys(managerTest)
         optionKey = keys[4]
         expect(optionKey).toBe('office')
