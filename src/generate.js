@@ -1,5 +1,5 @@
 const internTemplate = (internData) => {
-    const { name, id, email, role, school } = internData;
+    const { name, role, id, email, school } = internData;
 
     const template = `
     <div class="card">
@@ -16,7 +16,8 @@ const internTemplate = (internData) => {
 }
 
 const engineerTemplate = (engineerData) => {
-    const { name, id, email, role, github } = engineerData;
+    console.log(engineerData)
+    const { name, role, id, email, github } = engineerData;
 
     const template = `
     <div class="card">
@@ -34,7 +35,7 @@ const engineerTemplate = (engineerData) => {
 
 
 const managerTemplate = (managerData) => {
-    const { name, id, email, role, officeNumber } = managerData;
+    const { name, role, id, email, officeNumber } = managerData;
 
     const template = `
     <div class="card">

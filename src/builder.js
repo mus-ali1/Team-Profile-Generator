@@ -26,6 +26,13 @@ class teamBuilder {
             },
             {
                 type: "input",
+                message: "Please enter the employee role",
+                name: "name"
+
+
+            },
+            {
+                type: "input",
                 message: "Please enter the Employee ID.",
                 name: "id"
             },
@@ -41,8 +48,8 @@ class teamBuilder {
             }
         ])
             .then(details => {
-                const { name, id, email, officeNumber } = details
-                this.teamMembers.push(new Manager(name, id, email, officeNumber))
+                const { name, role, id, email, officeNumber } = details
+                this.teamMembers.push(new Manager(name, role, id, email, officeNumber))
                 this.addEmployee();
             })
     }
@@ -117,8 +124,8 @@ class teamBuilder {
             }
         ])
             .then(details => {
-                const { name, id, email, school } = details
-                this.teamMembers.push(new Intern(name, id, email, school));
+                const { name, role, id, email, school } = details
+                this.teamMembers.push(new Intern(name, role, id, email, school));
                 this.addEmployee();
             })
     }
@@ -129,6 +136,13 @@ class teamBuilder {
                 type: "input",
                 message: "Please enter the name of the engineer.",
                 name: "name"
+            },
+            {
+                type: "input",
+                message: "Please enter the employee role",
+                name: "name"
+
+
             },
             {
                 type: "input",
@@ -147,8 +161,8 @@ class teamBuilder {
             }
         ])
             .then(details => {
-                const { name, id, email, github } = details
-                this.teamMembers.push(new Engineer(name, id, email, github));
+                const { name, role, id, email, github } = details
+                this.teamMembers.push(new Engineer(name, role, id, email, github));
                 this.addEmployee();
             })
 
