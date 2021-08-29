@@ -21,7 +21,7 @@ describe('Manager', () => {
         expect(managerTest.officeNumber).toEqual(expect.any(Number))
     })
     it('has a role of engineer', () => {
-        expect(managerTest.getRole()).toBe('Manager')
+        expect(managerTest.getRole()).toBe('manager')
     }
     )
 })

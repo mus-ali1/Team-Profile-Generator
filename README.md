@@ -52,6 +52,8 @@ If you have any questions feel free to contact me here:
 
 ## Testing
 
+All the tests can be run using the npm test command in the command line. This test suite is  a basic unit tests on our class constructors.
+
 
 
 ## License
@@ -75,4 +77,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Application Image
 
- ![Image of Application]()
+ ![Image of Application](./assets/images/screenshot.png)
