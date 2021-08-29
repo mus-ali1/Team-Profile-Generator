@@ -15,8 +15,8 @@ describe('Manager', () => {
         expect(managerTest.email).toEqual(expect.stringContaining('@'))
     })
     it('has an office number', () => {
-        keys = Object.keys(managerTest)
-        optionKey = keys[4]
+        var keys = Object.keys(managerTest)
+        var optionKey = keys[4]
         expect(optionKey).toBe('office')
         expect(managerTest.office).toEqual(expect.any(Number))
     })
