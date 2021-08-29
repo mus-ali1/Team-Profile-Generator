@@ -72,7 +72,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Walk-through Video
 
-##### Video: [Team Profile Generator Walk-through]()
+##### Video: [Team Profile Generator Walk-through](https://www.youtube.com/watch?v=vG8xwoYzw0w)
 
 
 ## Application Image
