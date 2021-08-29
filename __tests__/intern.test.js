@@ -17,8 +17,8 @@ describe('Intern', () => {
 
     })
     it('has a school name', () => {
-        keys = Object.keys(internTest)
-        optionKey = keys[4]
+        var keys = Object.keys(internTest)
+        var optionKey = keys[4]
         expect(optionKey).toBe("School")
         expect(internTest.school).toEqual(expect.any(String))
     })
