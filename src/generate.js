@@ -1,11 +1,11 @@
 const internTemplate = (internData) => {
-    const { name, role, id, email, school } = internData;
+    const { name, id, email, school } = internData;
 
     const template = `
     <div class="card">
         <header>
         	<h2 class="name header">${name}</h2>
-            <h3 class="role header">${role}</h3>
+            <h3 class="role header">${internData.getRole()}</h3>
         </header>
         <p class="details">Employee ID: ${id}</p>
         <p class="details">Email: <a href="mailto:">${email}</a></p>
@@ -17,13 +17,13 @@ const internTemplate = (internData) => {
 
 const engineerTemplate = (engineerData) => {
     console.log(engineerData)
-    const { name, role, id, email, github } = engineerData;
+    const { name, id, email, github } = engineerData;
 
     const template = `
     <div class="card">
         <header>
             <h2 class="name header">${name}</h2>
-            <h3 class="role header">${role}</h3>
+            <h3 class="role header">${engineerData.getRole()}</h3>
         </header>
         <p class="details">Employee ID: ${id}</p>
         <p class="details">Email: <a href="mailto:">${email}</a></p>
@@ -35,13 +35,13 @@ const engineerTemplate = (engineerData) => {
 
 
 const managerTemplate = (managerData) => {
-    const { name, role, id, email, officeNumber } = managerData;
+    const { name, id, email, officeNumber } = managerData;
 
     const template = `
     <div class="card">
         <header>
             <h2 class="name header">${name}</h2>
-            <h3 class="role header">${role}</h3>
+            <h3 class="role header">${managerData.getRole()}</h3>
         </header>
         <p class="details">Employee ID: ${id}</p>
         <p class="details">Email: <a href="mailto:">${email}</a></p>
