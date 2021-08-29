@@ -77,4 +77,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Application Image
 
- ![Image of Application](./assets/images/screenshot.png)
+ ![Image of Application](./assets/Images/screenshot.png)
