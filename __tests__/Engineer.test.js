@@ -25,7 +25,7 @@ describe("Engineer", () => {
     })
 
     it('has a role of engineer', () => {
-        expect(engineerTest.getRole()).toBe('Engineer')
+        expect(engineerTest.getRole()).toBe('engineer')
     })
 
 
