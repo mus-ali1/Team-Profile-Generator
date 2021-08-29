@@ -1,5 +1,8 @@
-n{
+{
   "name": "team-profile-generator",
+  "jest": {
+    "verbose": false
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
