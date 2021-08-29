@@ -22,6 +22,7 @@ describe("Engineer", () => {
         optionKey = keys[4]
         expect(optionKey).toBe('gitHub')
         expect(engineerTest.gitHub).toEqual(expect.any(String))
+        console.log(engineerTest)
     })
 
     it('has a role of engineer', () => {
