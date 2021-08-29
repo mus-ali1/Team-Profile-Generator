@@ -19,9 +19,9 @@ describe("Engineer", () => {
     )
     it('has a github username', () => {
         var keys = Object.keys(engineerTest)
-        var optionKey = keys[4]
-        expect(optionKey).toBe('gitHub')
-        expect(engineerTest.gitHub).toEqual(expect.any(String))
+        var optionKey = keys[3]
+        expect(optionKey).toBe('github')
+        expect(engineerTest.github).toEqual(expect.any(String))
 
     })
 

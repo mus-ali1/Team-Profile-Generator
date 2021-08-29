@@ -18,9 +18,10 @@ describe('Intern', () => {
     })
     it('has a school name', () => {
         var keys = Object.keys(internTest)
-        var optionKey = keys[4]
+        var optionKey = keys[3]
+        console.log("Keys = ", keys)
         expect(optionKey).toBe("School")
-        expect(internTest.school).toEqual(expect.any(String))
+        expect(internTest.School).toEqual(expect.any(String))
     })
     it('has a role of engineer', () => {
         expect(internTest.getRole()).toBe('intern')
