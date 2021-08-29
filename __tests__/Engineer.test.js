@@ -2,7 +2,7 @@ const Engineer = require('../lib/Engineer');
 
 //name, email, id, role and github user name validation for Engineer
 
-const engineerTest = new Engineer('Mustafa', 'mustafamire@gmail.com', 2, 'Engineer', 'musali1')
+const engineerTest = new Engineer('Mustafa', 2, 'mustafamire@gmail.com', 'https://github.com/mus-ali1', "engineer")
 
 describe("Engineer", () => {
     it('has a name', () => {
@@ -10,23 +10,22 @@ describe("Engineer", () => {
         expect(engineerTest.name.length).toBeGreaterThan(2)
 
     })
-    it('has an email id', () => {
-        expect(engineerTest.email).toEqual(expect.stringContaining('@'))
-    })
-
     it('has an id that is a num', () => {
         expect(engineerTest.id).toEqual(expect.any(Number))
     })
-
-    it('has a role of engineer', () => {
-        expect(engineerTest.role).toBe('Engineer')
-    })
-
+    it('has an email id', () => {
+        expect(engineerTest.email).toEqual(expect.stringContaining('@'))
+    }
+    )
     it('has a github username', () => {
         keys = Object.keys(engineerTest)
         optionKey = keys[4]
         expect(optionKey).toBe('gitHub')
         expect(engineerTest.gitHub).toEqual(expect.any(String))
+    })
+
+    it('has a role of engineer', () => {
+        expect(engineerTest.getRole()).toBe('Engineer')
     })
 
 
